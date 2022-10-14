@@ -14,13 +14,13 @@ transformers 4.15.0
 
 Original training data of [CSKB Population](https://github.com/HKUST-KnowComp/CSKB-Population#download-the-data).
 
-Unlabeled data (adapted from ASER) can be downloaded [here](). (TBA)
+Unlabeled data (adapted from ASER) can be downloaded [here](https://hkustconnect-my.sharepoint.com/:f:/g/personal/tfangaa_connect_ust_hk/EkjTFKfA9gJAvkEDJ49mZmgBkgIl7aKLkV4Wfrg91HeeLg?e=SbsTRr). 
 
-Pseudo labels we produced can be downloaded [here](). (TBA)
+Pseudo labels we produced can be downloaded [here](https://hkustconnect-my.sharepoint.com/:f:/g/personal/tfangaa_connect_ust_hk/Et4qyZilZf1OtmaRy_3T1ewBNFiXVRrdOcMBqAXTKnVweA?e=AARZLa). 
 
 ## Training
 
-baseline (KG-BERT). RoBERTa-large [checkpoint](). (TBA)
+baseline (KG-BERT). RoBERTa-large.
 
 ```
 CUDA_VISIBLE_DEVICES=0 python models/pseudo_labeling/train_kgbert_baseline.py \
@@ -41,7 +41,7 @@ baseline (GPT2)
 CUDA_VISIBLE_DEVICES=1 TOKENIZER=gpt2-xl GPT2_MODEL=gpt2-xl TRAIN_BATCH_SIZE=8 GRAD_ACCUM_STEPS=8 VALID_BATCH_SIZE=16 EVAL_EVERY=250 SAVE_BEST=True python models/gpt2/train_gpt2.py
 ```
 
-PseudoReasoner. RoBERTa-large [checkpoint](). (TBA)
+PseudoReasoner. RoBERTa-large. Checkpoints can be downloaded [here](https://hkustconnect-my.sharepoint.com/:f:/g/personal/tfangaa_connect_ust_hk/EqvnhHipZR1Bsg75k4x6EaUBEi3TiN1er1oDUPVC7SwOKg?e=OY5yio).
 
 ```
 CUDA_VISIBLE_DEVICES=0 python models/pseudo_labeling/train_separate_pseudo.py \
