@@ -1,6 +1,6 @@
 # PseudoReasoner: Leveraging Pseudo Labels for Commonsense Knowledge Base Population (Findings of EMNLP 2022)
 
-This repository contains the code for our EMNLP'22 paper. Please set up a new `conda` environment with dependencies `requirements.txt` to replicate our experiments.
+This repository contains the code for our EMNLP'22 paper. Please set up a new `conda` environment with dependencies `requirement.txt` to replicate our experiments.
 
 
 ## Data
