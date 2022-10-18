@@ -1,0 +1,7 @@
+tqdm
+pandas
+numpy
+scikit-learn
+torch==1.7.1
+transformers==4.15.0
+nlg-eval @ git+https://github.com/Maluuba/nlg-eval.git@7f7993035a2f4729a15d20040fd904933ea58767

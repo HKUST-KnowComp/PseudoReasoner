@@ -1,0 +1,14 @@
+CUDA_VISIBLE_DEVICES=1 python baseline/noisy_student/train.py \
+    --ptlm roberta-large \
+    --lr 1e-5 \
+    --pseudo_lr 1e-5 \
+    --epochs 1 \
+    --output_dir "results/noisy_student/test" \
+    --train_csv_path "data/ckbp_csv/emnlp2021/train.csv" \
+    --relation_as_special_token \
+    --seed 102 --batch_size 64 --test_batch_size 128 \
+    --pseudo_examples_path "results/noisy_student/test/roberta-large_bs64_evalstep250/pseudo_lr1e-05_decay1_step500_evalstep250_dropout_0.5/iter_2/hard_4.36_5.8_0.1_0.1_0.1_new.csv" \
+    --pretrain_pseudo_epochs 1 --resume_train_from_best_pseudo --experiment_name "iter_3" \
+    --pretrain_from_path "results/noisy_student/test/roberta-large_bs64_evalstep250/pseudo_lr1e-05_decay1_step500_evalstep250_dropout_0.5/iter_2/best_model_seed_100.pth" \
+    --dropout 0.5 \
+    --pretrain_pseudo_steps 1000 --steps 0 
